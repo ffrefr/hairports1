@@ -12,9 +12,6 @@ import {
   ChevronRight,
   Calendar,
   Play,
-  Instagram,
-  Facebook,
-  Twitter,
 } from "lucide-react";
 
 export default function Index() {
@@ -133,11 +130,6 @@ export default function Index() {
                 <Clock className="h-4 w-4" />
                 <span className="tracking-wide">Open Today 9AM-7PM</span>
               </div>
-              <div className="flex items-center space-x-3">
-                <Instagram className="h-5 w-5 text-black hover:text-gray-600 cursor-pointer transition-colors" />
-                <Facebook className="h-5 w-5 text-black hover:text-gray-600 cursor-pointer transition-colors" />
-                <Twitter className="h-5 w-5 text-black hover:text-gray-600 cursor-pointer transition-colors" />
-              </div>
             </div>
           </div>
         </div>
@@ -185,7 +177,7 @@ export default function Index() {
               <Button
                 variant="outline"
                 size="lg"
-                className="border-white text-white hover:bg-white hover:text-black px-10 py-6 text-lg font-semibold tracking-wide transition-all duration-300"
+                className="border-white bg-transparent text-white hover:bg-white hover:text-black px-10 py-6 text-lg font-semibold tracking-wide transition-all duration-300"
                 onClick={() =>
                   window.open(
                     "https://maps.app.goo.gl/93Px12ENrjQN5oKU6",
@@ -195,6 +187,15 @@ export default function Index() {
               >
                 <MapPin className="mr-3 h-5 w-5" />
                 VISIT US
+              </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-white bg-transparent text-white hover:bg-white hover:text-black px-10 py-6 text-lg font-semibold tracking-wide transition-all duration-300"
+                onClick={() => window.open("tel:+13475338899")}
+              >
+                <Phone className="mr-3 h-5 w-5" />
+                CALL US
               </Button>
             </div>
           </div>
@@ -496,11 +497,6 @@ export default function Index() {
                 services. Where artistry meets excellence in every cut, color,
                 and style.
               </p>
-              <div className="flex items-center space-x-4">
-                <Instagram className="h-6 w-6 text-gray-400 hover:text-white cursor-pointer transition-colors" />
-                <Facebook className="h-6 w-6 text-gray-400 hover:text-white cursor-pointer transition-colors" />
-                <Twitter className="h-6 w-6 text-gray-400 hover:text-white cursor-pointer transition-colors" />
-              </div>
             </div>
             <div>
               <h6 className="font-bold mb-6 text-lg tracking-wide">CONTACT</h6>
